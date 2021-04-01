@@ -62,6 +62,7 @@ function testRecording() {
       this.play();
     });
     player_recorded.src = window.URL.createObjectURL(blob);
+    document.body.style.backgroundColor = 'black';
   }
 
   mediaRecorder.start(1000);  // timeslice = 1000
